@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="fastcampus.aop.part2.afit">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+<!--    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />-->
+<!--    <uses-feature android:name="android.hardware.camera2" />-->
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:installLocation="preferExternal"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Afit"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Study"
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:name="fastcampus.aop.part2.afit.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name="fastcampus.aop.part2.afit.EstimationActivity2"
+            android:exported="false" />
+        <activity
+            android:name="fastcampus.aop.part2.afit.SupportActivity"
+            android:exported="false" />
+        <activity
+            android:name="fastcampus.aop.part2.afit.CourseActivity"
+            android:exported="false" />
+        <activity
+            android:name="fastcampus.aop.part2.afit.PushupsActivity"
+            android:exported="false" />
+        <activity
+            android:name="fastcampus.aop.part2.afit.LungeActivity"
+            android:exported="false" />
+        <activity
+            android:name="fastcampus.aop.part2.afit.PlankActivity"
+            android:exported="false" />
+        <activity
+            android:name="fastcampus.aop.part2.afit.SquatsActivity"
+            android:exported="false" />
+        <activity
+            android:name="fastcampus.aop.part2.afit.ViewActivity"
+            android:exported="false" />
+        <activity
+            android:name="fastcampus.aop.part2.afit.EstimationActivity"
+            android:exported="true" />
+        <activity
+            android:name="fastcampus.aop.part2.afit.ChooseActivity"
+            android:exported="false" />
+        <activity
+            android:name="fastcampus.aop.part2.afit.CameraActivity"
+            android:exported="false" />
+        <activity
+            android:name="fastcampus.aop.part2.afit.MenuActivity"
+            android:exported="false"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name="fastcampus.aop.part2.afit.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
+
+

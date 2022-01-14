@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fontFamily="@font/bm_font"
+    android:background="@color/background"
+    android:layout_gravity="center"
+    tools:context=".EstimationActivity">
+
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/cardPunch2"
+        android:layout_width="350dp"
+        android:layout_height="390dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:neumorph_backgroundColor="@color/white"
+        app:neumorph_shadowColorDark="@color/dark_shadow"
+        app:neumorph_shadowColorLight="@color/light_shadow"
+        app:neumorph_shadowElevation="5dp"
+        app:neumorph_shapeAppearance="@style/NeumorphismCard">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="324dp"
+            android:layout_height="366dp">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="273dp"
+                android:layout_height="360dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.509"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!--        android:background="@drawable/textbackground"-->
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/Home"
+        android:layout_width="185dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/bm_font"
+        android:gravity="center"
+        android:text="메인으로"
+        android:textAllCaps="false"
+        android:textColor="@color/primary"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/retry2"
+        app:neumorph_backgroundColor="@color/background"
+        app:neumorph_shadowColorDark="@color/dark_shadow"
+        app:neumorph_shadowColorLight="@color/light_shadow"
+        app:neumorph_shapeAppearance="@style/NeumorphismImage"
+        app:neumorph_shapeType="flat" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/retry2"
+        android:layout_width="185dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/bm_font"
+        android:gravity="center"
+        android:text="다시하기"
+        android:textAllCaps="false"
+        android:textColor="@color/primary"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:neumorph_backgroundColor="@color/background"
+        app:neumorph_shadowColorDark="@color/dark_shadow"
+        app:neumorph_shadowColorLight="@color/light_shadow"
+        app:neumorph_shapeAppearance="@style/NeumorphismImage"
+        app:neumorph_shapeType="flat" />
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/cardPunch3"
+        android:layout_width="350dp"
+        android:layout_height="203dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardPunch2"
+        app:neumorph_backgroundColor="@color/white"
+        app:neumorph_shadowColorDark="@color/dark_shadow"
+        app:neumorph_shadowColorLight="@color/light_shadow"
+        app:neumorph_shadowElevation="5dp"
+        app:neumorph_shapeAppearance="@style/NeumorphismCard">>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="288dp"
+                android:layout_height="155dp"
+
+                android:fontFamily="sans-serif-black"
+                android:scrollbars="vertical"
+                android:text="."
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </soup.neumorphism.NeumorphCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
